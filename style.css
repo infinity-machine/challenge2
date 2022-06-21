@@ -1,3 +1,4 @@
+/* RESET */ 
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +8,10 @@
     text-decoration: none;
 }
 
+h1 {
+  font-size: 30px;
+}
+/* INDEX */
 .top-bar {
   height: 60px;
   width: 100%;
@@ -14,12 +19,15 @@
   background-color: black;
   position: fixed;
   top: 0;
-  z-index: 10
+  z-index: 10;
 }
 
+.top-bar ul {
+  min-width: 800px;
+}
 .top-bar li {
   display: inline-block;
-  padding: 20px 60px;
+  padding: 20px 10px;
   color: white;
 }
 
@@ -36,36 +44,51 @@ body {
 }
 
 .spotlight {
+  box-sizing: border-box;
   height: 200px;
   position: relative;
   background-color:blanchedalmond;
-  min-width: 1000px;
+  margin-right: 200px;
+  padding-top: 25px;
+  padding-bottom: 15px;
+  min-width: 450px;
 }
 
-.spotlight img {
+#me {
   position: absolute;
-  top: 0;
+  top: 60px;
   right: 0;
   z-index: 1;
 }
 
-#headline {
-  font-size: 40px;
-}
-
-.spotlight p, h1 {
+/* MUSIC & VIDEOGRAPHY */
+#songholder {
   position: relative;
-  margin-right: 200px;
 }
 
-body #iframe1 {
+#mymusic {
   position: absolute;
-  top: 60;
+  margin-left: 51%;
+}
+
+#myvideos {
+  position: absolute;
+  margin-right: 540px;
+
+}
+
+#vidholder {
+  position: relative;
+}
+
+#iframe1 {
+  position: absolute;
+  top: 0;
   right: 0;
 }
 
-body #iframe2 {
+#iframe2 {
   position: absolute;
-  top: 375px;
+  top: 315px;
   right: 0;
 }
