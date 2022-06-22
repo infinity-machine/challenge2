@@ -20,10 +20,6 @@ p {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-ul {
-  color: white;
-}
-
 .grid {
   display: grid;
   padding: 5%;
@@ -88,6 +84,11 @@ a:hover {
 }
 
 /* CONTACT ME */
+#contact-list li {
+  font-size: 300%;
+  text-align: center;
+  font-weight: bold;
+}
 
 
 
