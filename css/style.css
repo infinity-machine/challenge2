@@ -20,6 +20,10 @@ p {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+a {
+  color: white;
+}
+
 .grid {
   display: grid;
   padding: 5%;
@@ -48,15 +52,13 @@ p {
   display: flex;
   padding: 20px 10px 0;
 }
-.top-bar a {
-  color: white;
-}
 
 a:hover {
   color: pink;
   font-size: 125%;
   transition: 1s;
 }
+
 /* INDEX/FRONT PAGE */
 .grid-1 {
   grid-template-columns: 2fr 1fr;
@@ -111,11 +113,6 @@ a:hover {
   font-weight: bold;
   color: white;
 }
-#contact-list a {
-  color: white;
-}
-
-
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 629px) {
