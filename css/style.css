@@ -38,14 +38,16 @@ p {
 .top-bar ul {
   display: flex;
   justify-content: space-around;
-  padding: 15px 10px;
+  padding: 20px 30px;
   text-align: center;
+  color: white;
   font-size: 100%;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.top-bar a {
+  color: white;
 }
 
-ul a {
-  color: white
-}
 
 a:hover {
   color: pink;
@@ -58,12 +60,28 @@ a:hover {
   column-gap: 5px;
 }
 
+.grid-1, h1 {
+  font-size: 200%;
+}
+.grid-1, p {
+  font-size: 130%;
+
+}
 #me {
   min-width: 150px;
 }
 
 /* WEB DEVELOPMENT */
 /* RESTAURANT CAREER */
+.grid-3 {
+  grid-template-columns: 1fr 1fr;
+}
+
+#kitchen {
+  max-width: 500px;
+  min-width: 150px;
+}
+
 /* MUSIC AND VIDEOGRAPHY */
 .grid-4 {
   grid-template-columns: 1fr 1fr;
@@ -75,7 +93,7 @@ a:hover {
 } 
 
 .grid-4-item-3 {
-  padding: 30px;
+  padding: 5%;
 }
 
 #sk8vid {
@@ -88,13 +106,17 @@ a:hover {
   font-size: 300%;
   text-align: center;
   font-weight: bold;
+  color: white;
+}
+#contact-list a {
+  color: white;
 }
 
 
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 600px) {
-  .grid {
+@media screen and (max-width: 629px) {
+   .grid {
     display: grid;
     grid-template-columns: 1fr;
     padding: 60px;
@@ -103,6 +125,10 @@ a:hover {
   }
 
   .grid-1-item-2 {
+    grid-row: 1;
+  }
+
+  .grid-3-item-2 {
     grid-row: 1;
   }
 
@@ -115,8 +141,13 @@ a:hover {
     min-width: 50px;
   }
 
+  #kitchen {
+    max-width: 150px;
+  }
+
   #sk8vid {
     max-width: 300px;
+    margin-left: 15px;
   }
   h1 {
     font-size: 30px;
