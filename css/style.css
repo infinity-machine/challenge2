@@ -38,16 +38,19 @@ p {
 .top-bar ul {
   display: flex;
   justify-content: space-around;
-  padding: 20px 30px;
   text-align: center;
   color: white;
-  font-size: 100%;
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 90%;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.top-bar ul li {
+  display: flex;
+  padding: 20px 10px 0;
 }
 .top-bar a {
   color: white;
 }
-
 
 a:hover {
   color: pink;
@@ -78,7 +81,7 @@ a:hover {
 }
 
 #kitchen {
-  max-width: 500px;
+  max-width: 400px;
   min-width: 150px;
 }
 
@@ -141,6 +144,9 @@ a:hover {
     min-width: 50px;
   }
 
+  #napster {
+    max-width: 150px;
+  }
   #kitchen {
     max-width: 150px;
   }
