@@ -1,0 +1,30 @@
+.top-bar {
+    height: 60px;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+  }
+  
+  .top-bar ul {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    color: white;
+    font-size: 90%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  
+  .top-bar ul li {
+    display: flex;
+    padding: 20px 10px 0;
+  }
+  
+  a {
+    color: white
+  }
+  a:hover {
+    color: pink;
+    font-size: 125%;
+    transition: 1s;
+  }
