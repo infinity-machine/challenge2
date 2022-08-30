@@ -1,21 +1,22 @@
-// import { useState, useEffect } from 'react'
-import Header from './components/Header';
-import me_pic from './components/images/me.png'
+import { useState } from 'react'
 import './index.css'
+import Header from './components/Header';
+import Main from './pages/Main'
+import Resume from './pages/Resume'
+import Portfolio from './pages/Portfolio';
+import Contact from './pages/Contact';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <div>
-      <Header />
-      <main class="grid grid-1">
-        <article>
-          <h1>Connor Carciofini</h1>
-          <p>Web Developer, Videographer, Musician, and Restaurant Professional from Minneapolis, Minnesota</p>
-        </article>
-        <figure class="grid-item grid-1-item-2">
-          <img id="me" alt="me" src={me_pic} width="100%"></img>
-        </figure>
-      </main>
+      < Header />
+      <Routes>
+        <Route path="/" element={< Main />}></Route>
+        <Route path="/portfolio" element={< Portfolio />}></Route>
+        <Route path="/resume" element={< Resume />}></Route>
+        <Route path="/contact" element={< Contact />}></Route>
+      </Routes>
     </div>
   );
 };
