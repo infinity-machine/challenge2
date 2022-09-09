@@ -9,16 +9,16 @@ const Contact = () => {
     message: ''
   });
 
-    const handleSubmit = async (e) => {
-      e.preventDefault();
-      setSent(true);
-      fetch('/contact', {
-        method: 'POST',
-        headers: {
-            'Accept': 'application/json',
-            'content-type': 'application/json'
-        },
-        body: JSON.stringify(formInput)
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setSent(true);
+    fetch('/contact', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'content-type': 'application/json'
+      },
+      body: JSON.stringify(formInput)
     })
   }
 
@@ -32,17 +32,21 @@ const Contact = () => {
 
   return (
     <div className="container">
-      <ul className="centertext">
-        <li><a href="https://github.com/kingSHLERM">GITHUB</a></li>
+      <ul className="center">
+        <li><a href="https://github.com/infinity-machine">GITHUB</a></li>
+        <span>-</span>
         <li><a href="www.linkedin.com/in/connor-carciofini420">LINKEDIN</a></li>
       </ul>
       {!sent ?
         (
-          <form method="post" action="/contact" onSubmit={handleSubmit}>
-            <input name="from" onChange={handleInputChange} value={formInput.from} type="text" placeholder="your name"></input>
-            <input name="message" onChange={handleInputChange} value={formInput.message} type="textarea" placeholder="a brief message"></input>
-            <button>SUBMIT</button>
-          </form>
+          <div className="center">
+            <form id="form" className="container onecolumn" method="post" action="/contact" onSubmit={handleSubmit}>
+              <label>SEND ME A MESSAGE</label>
+              <input id="formfrom" name="from" onChange={handleInputChange} value={formInput.from} type="text" placeholder="your name"></input>
+              <textarea id="formmessage" name="message" onChange={handleInputChange} value={formInput.message} type="textarea" placeholder="a brief message"></textarea>
+              <button>SUBMIT</button>
+            </form>
+          </div>
         ) :
         <h3>MESSAGE SENT</h3>
       }
