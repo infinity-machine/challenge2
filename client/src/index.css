@@ -8,12 +8,8 @@
   list-style: none;
 }
 
-:root {
-  --main-color: rgb(161, 67, 56)
-}
 
 body {
-  padding-top: 60px;
   font-size: 100%;
   background-color: black
 }
@@ -21,24 +17,97 @@ body {
 h1 {
   font-size: 35px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+h3 {
+  font-size: 30px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+h4 {
+  font-size: 30px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white;
 }
 
 p {
   font-size: 22px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white;
 }
 
-ul.contact-list {
-  font-size: 30px;
-  text-align: center;
+li {
+  font-size: 22px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white;
 }
 
 .container {
   display: grid;
   padding: 5%;
-  background-color: var(--main-color);
 }
 
 .twocolumns {
   grid-template-columns: 50% 50%;
 }
+
+.fourcolumns {
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+.fivecolumns {
+  grid-template-columns: 20% 20% 20% 20% 20%;
+}
+.fourrows {
+  grid-template-rows: 25% 25% 25% 25%;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centertext {
+  text-align: center;
+}
+
+.righttext {
+  text-align: right;
+}
+
+#icon {
+  width: 100%;
+}
+
+#video {
+  height: 300px;
+}
+
+#dealwithit {
+  width: 100%;
+  max-width: 350px;
+}
+
+#green {
+  background-color:rgb(198, 232, 149);
+}
+
+#blue {
+  background-color: rgb(89, 89, 189);
+}
+
+#yellow {
+  background-color: rgb(255, 225, 0);
+}
+
+#orange {
+  background-color: rgb(244, 130, 0);
+}
+
+#pink {
+  background-color: rgb(243, 199, 206);
+}
+
