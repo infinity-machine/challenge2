@@ -14,7 +14,7 @@ mail_router.post('/', async (req, res) => {
 
   const mailOptions = {
     from: process.env.MAIL_SEND,
-    to: process.env.MAIL_RECIEVE,
+    to: process.env.MAIL_RECEIVE,
     subject: `FROM -${req.body.from}- MAILBOT REPORTING`,
     text: req.body.message
 };
