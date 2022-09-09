@@ -37,19 +37,20 @@ const Contact = () => {
         <span>-</span>
         <li><a href="www.linkedin.com/in/connor-carciofini420">LINKEDIN</a></li>
       </ul>
-      {!sent ?
-        (
-          <div className="center">
+      <div className="center">
+        {!sent ?
+          (
             <form id="form" className="container onecolumn" method="post" action="/contact" onSubmit={handleSubmit}>
               <label>SEND ME A MESSAGE</label>
-              <input id="formfrom" name="from" onChange={handleInputChange} value={formInput.from} type="text" placeholder="your name"></input>
-              <textarea id="formmessage" name="message" onChange={handleInputChange} value={formInput.message} type="textarea" placeholder="a brief message"></textarea>
+              <input id="frominput" className="centertext" name="from" onChange={handleInputChange} value={formInput.from} type="text" placeholder="your name"></input>
+              <textarea id="messageinput" name="message" onChange={handleInputChange} value={formInput.message} type="textarea" placeholder="a brief message"></textarea>
               <button>SUBMIT</button>
             </form>
-          </div>
-        ) :
-        <h3>MESSAGE SENT</h3>
-      }
+          ) :
+          <h3>MESSAGE SENT</h3>
+        }
+      </div>
+
 
     </div>
   )

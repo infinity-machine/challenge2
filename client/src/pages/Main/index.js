@@ -7,7 +7,7 @@ const Main = () => {
         <div className="container">
             <div className="container twocolumns">
                 <img id="icon" src={me_pic} alt="literally me"></img>
-                <article class="righttext">
+                <article className="righttext">
                     <h3>CONNOR CARCIOFINI</h3>
                     <h4>web developer</h4>
                 </article>
