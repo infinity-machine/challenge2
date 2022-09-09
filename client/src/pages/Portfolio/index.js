@@ -5,7 +5,7 @@ import dealwithit from '../../assets/images/dealwithit.png'
 
 const Portfolio = () => {
     return (
-        <div className="container twocolumns">
+        <div className="container twocolumns top">
             <div>
                 <h3>WEATHERBOT!</h3>
                 <p>Weatherbot is a worldwide weather fetching app, where you can register and save locations. In addition to current weather conditions, daily and hourly forecasts are also available.</p>

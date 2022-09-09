@@ -31,7 +31,7 @@ const Contact = () => {
   }
 
   return (
-    <div className="container">
+    <div className="container top">
       <ul className="center">
         <li><a href="https://github.com/infinity-machine">GITHUB</a></li>
         <span>-</span>
@@ -43,7 +43,7 @@ const Contact = () => {
             <form id="form" className="container onecolumn" method="post" action="/contact" onSubmit={handleSubmit}>
               <label>SEND ME A MESSAGE</label>
               <input id="frominput" className="centertext" name="from" onChange={handleInputChange} value={formInput.from} type="text" placeholder="your name"></input>
-              <textarea id="messageinput" name="message" onChange={handleInputChange} value={formInput.message} type="textarea" placeholder="a brief message"></textarea>
+              <textarea id="messageinput" name="message" onChange={handleInputChange} value={formInput.message} type="textarea" placeholder="..."></textarea>
               <button>SUBMIT</button>
             </form>
           ) :

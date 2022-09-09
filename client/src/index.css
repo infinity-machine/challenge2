@@ -11,7 +11,8 @@
 
 body {
   font-size: 100%;
-  background-color: black
+  /* background-color: black; */
+  background-image: url('/Users/connor/Desktop/bootcamp/assignments/C2-PORTFOLIO/client/src/assets/images/nightsky.jpg')
 }
 
 a {
@@ -35,6 +36,13 @@ h4 {
   font-size: 30px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: white;
+}
+.nav {
+  font-size: 22px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white;
+  padding: 10px 20px 10px;
+  background-color: black;
 }
 
 p {
@@ -63,12 +71,15 @@ li {
 
 .container {
   display: grid;
-  padding: 5%;
+  padding: 3% 5% 3%;
 }
 
-/* .fixed {
+.fixed {
   position: fixed;
-} */
+  top: 0;
+  width: 100%;
+}
+
 .onecolumn {
   grid-template-columns: 100;
 }
@@ -87,7 +98,9 @@ li {
 .fourrows {
   grid-template-rows: 25% 25% 25% 25%;
 }
-
+.top {
+  margin-top: 20px;
+}
 .center {
   display: flex;
   justify-content: center;
@@ -114,7 +127,9 @@ li {
   width: 100%;
   max-width: 350px;
 }
-
+/* #form {
+  padding: 30px;
+} */
 #frominput {
   padding: 12px 12px;
 }
