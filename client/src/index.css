@@ -11,9 +11,37 @@
 
 body {
   font-size: 100%;
-  /* background-color: black; */
-  background-image: url('/Users/connor/Desktop/bootcamp/assignments/C2-PORTFOLIO/client/src/assets/images/nightsky.jpg')
+  background-color: black;
+  padding: 5% 20% 5%;
 }
+
+#navbar {
+  overflow: hidden;
+  background-color: black;
+}
+
+#dropdown {
+  overflow: hidden;
+}
+
+/* #dropdowncontent {
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+} */
+
+.nav {
+  font-size: 18px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white;
+  padding: 10px 20px 10px;
+}
+
+.hide {
+  display: none;
+}
+
 
 a {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -36,13 +64,6 @@ h4 {
   font-size: 30px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: white;
-}
-.nav {
-  font-size: 22px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  color: white;
-  padding: 10px 20px 10px;
-  background-color: black;
 }
 
 p {
@@ -71,14 +92,13 @@ li {
 
 .container {
   display: grid;
-  padding: 3% 5% 3%;
 }
 
-.fixed {
+/* .fixed {
   position: fixed;
   top: 0;
   width: 100%;
-}
+} */
 
 .onecolumn {
   grid-template-columns: 100;
@@ -88,6 +108,10 @@ li {
   grid-template-columns: 50% 50%;
 }
 
+.threecolumns {
+  grid-template-columns: 33% 33% 33%;
+}
+
 .fourcolumns {
   grid-template-columns: 25% 25% 25% 25%;
 }
@@ -95,11 +119,16 @@ li {
 .fivecolumns {
   grid-template-columns: 20% 20% 20% 20% 20%;
 }
+
 .fourrows {
   grid-template-rows: 25% 25% 25% 25%;
 }
+
 .top {
-  margin-top: 20px;
+  margin-top: 25px;
+}
+.sides {
+  padding: 0% 40px 0%
 }
 .center {
   display: flex;
@@ -115,8 +144,8 @@ li {
   text-align: right;
 }
 
-#icon {
-  width: 100%;
+#card {
+  width: 400px;
 }
 
 #video {

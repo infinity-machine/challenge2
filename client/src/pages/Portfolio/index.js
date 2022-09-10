@@ -16,7 +16,7 @@ const Portfolio = () => {
             <div>
                 <img id="dealwithit" src={dealwithit} alt="literally me"></img>
             </div>
-            <div>
+            <div className="righttext">
                 <h3>DEAL WITH IT</h3>
                 <p>Deal With It is a full-stack interactive card game application with betting capabilities and authentication, developed by my team in the University of Minnesota's web development bootcamp. The app is currently live on <a href="https://cjc-highrollers.herokuapp.com/">Heroku.</a></p>
             </div>
