@@ -12,7 +12,7 @@ const Header = () => {
     return (
             <div id="navbar" className="center centertext">
                 <div id="container dropdown">
-                    <p onClick={handleDropdown}>menu</p>
+                    <p onClick={handleDropdown}>~ menu ~</p>
                     <div onClick={handleDropdown} id="dropdowncontent" className="hide">
                         <div className="nav"><NavLink to="/resume">RESUME</NavLink></div>
                         <div className="nav"><NavLink to="/portfolio">PORTFOLIO</NavLink></div>

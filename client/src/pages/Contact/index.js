@@ -22,7 +22,6 @@ const Contact = () => {
     })
   }
 
-
   const handleInputChange = (e) => {
     setFormInput({
       ...formInput,
@@ -31,17 +30,15 @@ const Contact = () => {
   }
 
   return (
-    <div className="container top">
-      <ul className="center">
-        <li><a href="https://github.com/infinity-machine">GITHUB</a></li>
-        <span>-</span>
-        <li><a href="www.linkedin.com/in/connor-carciofini420">LINKEDIN</a></li>
-      </ul>
-      <div className="center">
+    <div className="container centertext top">
+        <h4><a href="https://github.com/infinity-machine">~ github ~</a></h4>
+        <h4><a href="www.linkedin.com/in/connor-carciofini420">~ linkedin ~</a></h4>
+    
+      <div>
         {!sent ?
           (
             <form id="form" className="container onecolumn" method="post" action="/contact" onSubmit={handleSubmit}>
-              <label>SEND ME A MESSAGE</label>
+              <label>send a message</label>
               <input id="frominput" className="centertext" name="from" onChange={handleInputChange} value={formInput.from} type="text" placeholder="your name"></input>
               <textarea id="messageinput" name="message" onChange={handleInputChange} value={formInput.message} type="textarea" placeholder="..."></textarea>
               <button>SUBMIT</button>
