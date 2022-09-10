@@ -127,6 +127,7 @@ li {
 .top {
   margin-top: 25px;
 }
+
 .sides {
   padding: 0% 40px 0%
 }
@@ -156,12 +157,11 @@ li {
   width: 100%;
   max-width: 350px;
 }
-/* #form {
-  padding: 30px;
-} */
+
 #frominput {
   padding: 12px 12px;
 }
+
 #messageinput {
   width: 100%;
   height: 150px;
@@ -172,25 +172,5 @@ li {
   background-color: #f8f8f8;
   font-size: 16px;
   resize: none;
-}
-
-#green {
-  background-color:rgb(198, 232, 149);
-}
-
-#blue {
-  background-color: rgb(89, 89, 189);
-}
-
-#yellow {
-  background-color: rgb(255, 225, 0);
-}
-
-#orange {
-  background-color: rgb(244, 130, 0);
-}
-
-#pink {
-  background-color: rgb(243, 199, 206);
 }
 

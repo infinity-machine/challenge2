@@ -1,6 +1,7 @@
 import React from 'react'
 import './index.css'
 import Header from './components/Header'
+import Card from './components/Card'
 import Main from './pages/Main'
 import Resume from './pages/Resume'
 import Portfolio from './pages/Portfolio';
@@ -12,6 +13,7 @@ function App() {
   return (
     <div>
       < Header />
+      < Card />
       <Routes>
         <Route path="/" element={< Main />}></Route>
         <Route path="/portfolio" element={< Portfolio />}></Route>
