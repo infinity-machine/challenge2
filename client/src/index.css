@@ -175,3 +175,11 @@ li {
   background: transparent;
   color: white;
 }
+
+#wbicon {
+  width: 300px;
+}
+
+#dwiicon {
+  width: 250px;
+}

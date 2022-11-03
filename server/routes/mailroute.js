@@ -4,6 +4,7 @@ require('dotenv').config({ path: path.resolve(__dirname, '../../.env') })
 const nodemailer = require('nodemailer')
 
 mail_router.post('/', async (req, res) => {
+  console.log(req.body)
   const transporter = await nodemailer.createTransport({
     service: 'hotmail',
     auth: {
@@ -15,7 +16,7 @@ mail_router.post('/', async (req, res) => {
   const mailOptions = {
     from: process.env.MAIL_SEND,
     to: process.env.MAIL_RECEIVE,
-    subject: `FROM -${req.body.from}- MAILBOT REPORTING`,
+    subject: `MAILBOT - from ${req.body.from} - MAILBOT`,
     text: req.body.message
 };
 

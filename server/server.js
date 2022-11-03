@@ -7,7 +7,6 @@ const mail_route = require('./routes/mailroute')
 
 const app = express();
 
-// require('./routes/mailroute')(app)
 require('./routes/htmlroutes')(app);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));

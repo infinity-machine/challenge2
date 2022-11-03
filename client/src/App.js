@@ -22,14 +22,14 @@ function App() {
      }
      function addSphere(){
            for ( let z= -1000; z < 1000; z+=20 ) {
-             let geometry   = new THREE.SphereGeometry(0.5, 32, 32);
+             let geometry = new THREE.SphereGeometry(0.5, 32, 32);
              let material = new THREE.MeshBasicMaterial( {color: 0xffffff} );
              let sphere = new THREE.Mesh(geometry, material);
              sphere.position.x = Math.random() * 1000 - 500;
              sphere.position.y = Math.random() * 1000 - 500;
              sphere.position.z = z;
              sphere.scale.x = sphere.scale.y = 2;
-             scene.add( sphere );
+             scene.add(sphere);
              stars.push(sphere); 
            }
      }

@@ -38,10 +38,10 @@ const Contact = () => {
         {!sent ?
           (
             <form id="form" className="container onecolumn" method="post" action="/contact" onSubmit={handleSubmit}>
-              <label>send a message</label>
-              <input id="frominput" className="centertext" name="from" onChange={handleInputChange} value={formInput.from} type="text" placeholder="your name"></input>
+              <label>send me a message</label>
+              <input id="frominput" className="centertext" name="from" onChange={handleInputChange} value={formInput.from} type="text" placeholder="YOUR EMAIL OR PHONE NUMBER"></input>
               <textarea id="messageinput" name="message" onChange={handleInputChange} value={formInput.message} type="textarea" placeholder="..."></textarea>
-              <button>SUBMIT</button>
+              <button>send</button>
             </form>
           ) :
           <h3>MESSAGE SENT</h3>

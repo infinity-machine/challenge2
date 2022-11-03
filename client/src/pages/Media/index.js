@@ -5,7 +5,7 @@ const Media = () => {
     <div className="container centertext top">
       <div>
         <h3>music</h3>
-        <p>I MAKE A VARIETY OF MUSIC, MOSTLY USING ABLETON AND IT'S MANY BUILD IN SYNTHESIZERS, BUT ALSO BY ANALOG MEANS.
+        <p>I MAKE A VARIETY OF MUSIC, MOSTLY USING ABLETON AND IT'S MANY BUILT IN SYNTHESIZERS, BUT ALSO BY ANALOG MEANS.
         </p>
       </div>
       <div>
